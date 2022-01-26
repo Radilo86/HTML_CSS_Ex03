@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Sesion 3</title>
+</head>
+<body style="background:black; color:orange">
+	<h1><a href="http://pixabay.com">Enlace a Pixabay</a>
+	<h2><a href="http://pixlr.com">Enlace a Pixlr (editor de imagenes online)</a>
+	<h2><a href="https://fonts.google.com/icons">Enlace a Iconos para html (si abrimos la imagen es texto
+		por lo que siempre se interpreta igual en los navegadores)</a>
+	<br>
+	<br>
+	<img src="./res/gato.jpg" alt="Es la descripcion de la imagen" width="400" height="350" />
+	<div>
+		<h3>Tipos de imagenes trabajados:</h3>
+		<ol>
+			<li>GIF</li>
+			<li>PNG</li>
+			<li>JPG</li>
+			<li>SVG</li>
+			<li>WEBP</li>
+		</ol>
+	</div>
+	
+	<h3>Etiqueta picture para imagenes responsive</h3>
+	<picture>
+		<source />
+	</picture>
+	
+	<!-- Cuando ponemos autoplay, debemos poner siempre muted -->
+	<!-- Si ponemos mas de un src el navegador ira video a video intentando reproducir hasta que 
+		encuentre uno que puede reproducir y reconoce el formato. -->
+	<h3>VIDEOS</h3>
+	<br>
+	Esto es un video en autoplay, muted y loop.
+	<video autoplay muted loop 
+		src="../02 - Formularios y tablas.mkv" controls
+		poster="./res/gato.jpg" type="video/mkv" alt="Texto alternativo"></video>
+	
+	<br>
+	<br>
+	Este es un video insertado con iframe desde YouTube.
+	<iframe width="896" height="504" src="https://www.youtube.com/embed/loKqHFV5o2M?list=RDloKqHFV5o2M" 
+		title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+		clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+		allowfullscreen>
+	</iframe>
+	<br>
+	<br>
+	<h3>AUDIOS EN HTML</h3>
+	<audio source src="./res/guitar.mp3" controls preload="none"> </audio>
+	
+</body>
+</html>
